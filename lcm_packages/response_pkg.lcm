@@ -1,0 +1,12 @@
+struct response_t {
+    int8_t type;
+    int8_t status;
+    int16_t length;
+    string msg;
+    int16_t p_distance;
+    int16_t p_angle;
+    int8_t m_angle;
+    int16_t m_torque;
+    int16_t m_speed;
+    int16_t m_position;
+}

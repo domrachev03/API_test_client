@@ -1,0 +1,28 @@
+package server;
+
+/*
+ * Server commands:
+ *    Code 1 -- Turn on the server (?)
+ *    Code 2 -- Restart
+ *    Code 3 -- Shutdown
+ *    Code 4 -- Get status (?)
+ */
+
+struct command_t
+{
+    int8_t code;
+}
+
+/*
+ * Server response codes:
+ *      Code 0 -- "SRV_OK". Server is on and function properly
+ *      Code 1 -- "SRV_ERROR". Server failed to perform properly.
+ *      Code 2 -- "SRV_REBOOT". Server is rebooting.
+ *      Code 3 -- "SRV_STOP". Server stops working
+ */
+
+struct status_t {
+    int8_t code;
+    int16_t length;
+    string msg;
+}

@@ -1,0 +1,5 @@
+struct request_t {
+    int8_t type;
+    int8_t code;
+    int8_t data[7];
+}
